@@ -1,4 +1,4 @@
-# Local Infrastructure-as-Code Demo (Terraform + Docker)
+# Local Infrastructure-as-Code Demo (using Terraform + Docker)
 
 This project demonstrates how to use **Terraform** to provision and manage local infrastructure. Instead of using a cloud provider, this demo utilizes **Docker** to spin up a containerized NGINX web server, showcasing the "Plan, Apply, and Destroy" lifecycle.
 
@@ -6,7 +6,6 @@ This project demonstrates how to use **Terraform** to provision and manage local
 * Demonstrate Infrastructure-as-Code (IaC) principles.
 * Show the use of **Variables** for configuration.
 * Show the use of **Outputs** for automated feedback.
-* Provide a zero-cost, local-only environment for testing.
 
 ## 🛠️ Prerequisites
 Before running the demo, ensure you have the following installed:
@@ -20,19 +19,13 @@ Before running the demo, ensure you have the following installed:
 
 ## 💻 How to Run the Demo
 
-### 1. Initialize
-Download the necessary Docker providers.
+### 1. The basic steps to run terraform
+
 ```bash
 terraform init
 
-### 2. Preview the changes
-```bash
 terraform plan
 
-### 3. Apply the changes
-```bash
 terraform apply
 
-### 4. Clean up the demo
-```bash
 terraform destroy
